@@ -1,0 +1,6 @@
+{
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "claudeCode.useTerminal": true,
+    "terminal.integrated.mouseWheelScrollSensitivity": 3
+}

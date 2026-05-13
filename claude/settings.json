@@ -1,0 +1,17 @@
+{
+  "enabledPlugins": {
+    "ecc@ecc": true
+  },
+  "extraKnownMarketplaces": {
+    "ecc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/affaan-m/everything-claude-code.git"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "effortLevel": "max"
+}

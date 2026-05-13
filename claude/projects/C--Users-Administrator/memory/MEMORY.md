@@ -1,0 +1,1 @@
+- [ECC plugin install](ecc-plugin-install.md) — `ecc@ecc` installed globally via plugin path on 2026-05-12; rules: common + typescript. Do NOT also run install.ps1 (would duplicate).
