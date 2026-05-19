@@ -37,16 +37,23 @@ Record the new PC's username — you need it for the memory folder slug later.
 
 ## Phase 1 — Connect to the source machine's share
 
-The old PC exposes a read-only share. Mount it:
+The **user** mounts the read-only share for you (it needs an interactive
+password prompt you can't fill). First verify it's already there:
 
 ```powershell
-net use Z: \\DESKTOP-9UPFD00\Migration /user:DESKTOP-9UPFD00\3
-# (prompts for the old PC's password)
 Get-ChildItem Z:\
 ```
 
-If the share is unreachable: confirm both PCs are on the same WiFi, network
-discovery is on, and the old PC is awake.
+If `Z:\` is not accessible, ask the user to run this themselves and enter the
+old PC's password:
+
+```powershell
+net use Z: \\DESKTOP-9UPFD00\Migration /user:DESKTOP-9UPFD00\3
+```
+
+If the share is unreachable: confirm both PCs are on the same WiFi, the old PC
+is awake, and try the IP form `\\40.10.10.23\Migration` (or, if both have
+Tailscale, `\\100.121.110.58\Migration`).
 
 ---
 
